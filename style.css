@@ -1,0 +1,229 @@
+@charset "UTF-8";
+
+/*
+
+FYI --  We really only need one. I know this game and I'm not playing....
+
+Victory is contagious!
+
+*/
+
+body{
+	font-family: 'Lato', sans-serif;
+	background:white url(images/bg-polka.gif) repeat 0 0;
+}
+
+.container{
+	transition:all 1s;
+}
+
+#header{
+	height:123px;
+	width:100%;
+	position:fixed;
+	top:0;
+	display:none;
+	z-index:1000;
+}
+
+#header .wrapper{
+	height:75px;
+	border-top:3px solid #cd2027;
+	width:100%;
+	background-color:white;
+	box-shadow:0 0 5px #666;
+}
+
+#intro-logo{
+	width:256px;
+	height:362px;
+	background-image:url(images/logo-lrg.png);
+	margin:0 auto;
+	position:fixed;
+	margin-left:-136px;
+	left:50%;
+	z-index:1000;
+}
+
+#logo{
+	width:85px;
+	height:121px;
+	background-image:url(images/logo-sml.png);
+}
+
+#slogan p{
+	font-size:25px;
+	color:#999;
+	font-weight:bold;
+	margin:20px 0 0 10px;
+}
+
+.contribute p{
+	height:50px;
+	margin-top:11px;
+	background-color:#cd2027;
+	color:white;
+	text-align:center;
+	padding:11px 40px;
+	font-size:20px;
+	cursor:pointer;
+	display:block;
+}
+
+#slide1{
+	height:768px;
+	background:transparent url(images/merridian-x-park-winter.jpg) no-repeat bottom center;
+	background-size:cover;
+	cursor:pointer;
+}
+
+#slide2{
+	background:black url(images/big-jim.jpg) no-repeat top center;
+	background-size:cover;
+	height:768px;
+	box-shadow:0 0 5px #666;
+	cursor:pointer;
+}
+
+#slide2 .container h1{
+	font-family: 'Arbutus Slab', serif;
+	margin-top:250px;
+	font-size:75px;
+}
+
+#slide2 .container p{
+	font-size:18px;
+	line-height:26px;
+}
+
+#slide2 .container h1, #slide2 .container p{
+	color:white;
+}
+
+#slide2 .contribute{
+	margin-top:40px;
+	font-weight:bold;
+}
+
+#slide2 .contribute p{
+	padding:16px 0;
+	display:block;
+	height:55px;
+}
+
+#slide3{
+	height:768px;
+	padding-bottom:100px;
+}
+
+#donate a{
+	height:88px;
+	background-color:#cd2027;
+	width:100%;
+	display:block;
+	text-align:center;
+	margin-top:170px;
+	text-decoration:none;
+	color:white;
+	text-transform:uppercase;
+	padding:22px 0;
+	font-size:30px;
+}
+
+#volunteer, #supporter{
+	margin-top:50px;
+}
+
+#volunteer h2, #supporter h2{
+	font-size:30px;
+	color:#666;
+}
+
+#volunteer p, #supporter p{
+	max-width:600px;
+	font-size:18px;
+	color:#666;
+}
+
+#volunteer .row, #supporter .row{
+	margin-top:20px;
+}
+
+#volunteer input[type="email"], #supporter input[type="email"]{
+	border:1px solid #ccc;
+	background-color:white;
+	font-style:italic;
+	color:#666;
+	font-size:30px;
+	padding:15px 0 15px 15px;
+	width:100%;
+}
+
+#volunteer input[type="submit"], #supporter input[type="submit"]{
+	height:70px;
+	width:100%;
+	background-color:#333;
+	color:white;
+	font-size:30px;
+	font-weight:normal;
+	outline:none;
+	border:none;
+}
+
+#volunteer input[type="submit"]{
+	margin-bottom:100px;
+}
+
+@media all and (max-width: 1200px){
+	.contribute{
+		display:none;
+	}
+	#slogan p{
+		margin-left:20px;
+	}
+}
+
+@media all and (max-width: 992px){
+	#slogan p{
+		margin:22px 0 0 40px;
+	}
+}
+
+@media all and (max-width: 768px){
+	#slogan p{
+		display:none;
+	}
+	
+	.contribute{
+		display:block;
+	}
+	
+	.contribute p{
+		width:200px;
+		margin-right:20px;
+	}
+	
+	#slogan{
+		display:none;
+	}
+	
+	#volunteer input[type="submit"], #supporter input[type="submit"]{
+		margin-top:15px
+	}
+}
+
+@media all and (max-width: 480px){
+	#slide2 .container h1{
+		margin-top:140px;
+		font-size:50px;
+	}
+	
+	#slide2 .container p{
+		font-size:14px;
+		line-height:22px;
+	}
+	
+	.contribute p {
+		width: 175px;
+	}
+}
